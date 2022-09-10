@@ -1,0 +1,1 @@
+import React, {FC} from "react";import styles from '../../styles/EmptyList.module.scss'interface Props {}const EmptyList: FC<Props> = (props) => {  return (    <div className={styles.emptyList}>      Users not found    </div>  );};export default EmptyList;

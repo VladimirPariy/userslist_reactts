@@ -1,0 +1,1 @@
+@import './Mixin';.emptyList{  @include start-style-phone;}@media only screen and (min-width: 600px) {  .emptyList{    @include start-style-tablets;  }}@media only screen and (min-width: 992px) {  .emptyList{    @include start-style-large-des;  }}
