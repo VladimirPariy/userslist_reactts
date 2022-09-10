@@ -1,0 +1,1 @@
+.wrapper {  max-width: 1470px;  padding: 10px;  margin: 0 auto;  display: flex;  flex-direction: column;  height: 100%;  > div {    flex: 1 1 auto;  }}@media only screen and (min-width: 600px) {  .wrapper {    padding: 30px 20px;  }}

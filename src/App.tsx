@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import styles from './styles/App.module.scss'
+import {useFetchingUsers} from "./hooks/useFetchingUsers";
+import {useSort} from "./hooks/useSort";
+import {useFetchingPosts} from "./hooks/useFetchingPosts";
+import * as api from './api/api'
+import Filters from "./components/Filters";
+import Controls from "./components/Controls";
+import Content from "./components/Content";
 
-function App() {
+
+const App: FC = () => {
+
+  const {users, isUsersLoading, errorUsers} = useFetchingUsers()
+
+  const {pageCount, setPageCount, selectedSort, setSelectedSort, searchUser, setSearchUser, visibleUsers, totalPage} = useSort(users)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.wrapper}>
+      <Filters selectedSort={selectedSort}
+               searchUser={searchUser}
+               setSelectedSort={setSelectedSort}
+               setSearchUser={setSearchUser}/>
+      <div>
+        <Content isLoading={isUsersLoading}
+                 visibleUsers={visibleUsers}
+                 error={errorUsers}
+        />
+      </div>
+      <Controls setPageCount={setPageCount}
+                pageCount={pageCount}
+                totalPage={totalPage}/>
     </div>
   );
 }

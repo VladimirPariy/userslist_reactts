@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://jsonplaceholder.typicode.com/'export const queryURLByUser = (): string => {  return `${BASE_URL}users`}export const queryURLByUserPosts = (id:string):string => {  return `${BASE_URL}users/${id}/posts?_limit=5`}
