@@ -2,8 +2,6 @@ import React, {FC} from 'react';
 import styles from './styles/App.module.scss'
 import {useFetchingUsers} from "./hooks/useFetchingUsers";
 import {useSort} from "./hooks/useSort";
-import {useFetchingPosts} from "./hooks/useFetchingPosts";
-import * as api from './api/api'
 import Filters from "./components/Filters";
 import Controls from "./components/Controls";
 import Content from "./components/Content";
