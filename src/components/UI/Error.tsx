@@ -1,1 +1,1 @@
-import React, {FC, ReactNode} from "react";interface Props {  children:ReactNode}const Error: FC<Props> = (props) => {  return (    <div>      {props.children}    </div>  );};export default Error;
+import React, {FC, ReactNode} from "react";import styles from '../../styles/Error.module.scss'interface Props {  children:ReactNode}const Error: FC<Props> = (props) => {  return (    <div className={styles.error}>      {props.children}    </div>  );};export default Error;
