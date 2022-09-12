@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b49c6833-56e7-4768-b064-5b0cac9bdd15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/styles/Error.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Error.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserList.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="b49c6833-56e7-4768-b064-5b0cac9bdd15" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +64,7 @@
       <workItem from="1662700965719" duration="27519000" />
       <workItem from="1662794778040" duration="10340000" />
       <workItem from="1662809330271" duration="32156000" />
-      <workItem from="1662884292241" duration="236000" />
+      <workItem from="1662884292241" duration="270000" />
     </task>
     <servers />
   </component>
